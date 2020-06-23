@@ -13,7 +13,7 @@
 
 body {
 	min-height: 100vh;
-	background-color: #000000;
+	background-color: black;
 }
 
 .container {
@@ -62,4 +62,25 @@ body {
 
 .gallery-image:hover {
 	transform: scale(1.15);
+}
+
+
+
+
+
+#countdown {
+	padding-left: 175px;
+	font-size: 5rem;
+	color: #333;
+}
+#timer {
+	padding-left: 175px;
+  	width:100%
+  	float:left;
+  	color: pink;
+  	font-size: 3.5rem;
+}
+#timer li{
+  	display:inline;
+  	margin-right:20px;
 }
