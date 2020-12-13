@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VisaReq</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" >
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+    <!--JQuery CDN-->
+    <script src="assets/libs/jquery.min.js"></script>
+    <!--AngulaJS CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Custom AngularJS JS-->
+    
+
+    
+    <style>
+        body{
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+<body ng-app="">
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">VisaReq</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="continent/asia.html" type="button" onclick="DoSomething()">Asia</a></li>
+            <li><a href="#" type="button">Africa</a></li>
+            <li><a href="#" type="button">North America</a></li>
+            <li><a href="#" type="button">South America</a></li>
+            <li><a href="#" type="button">Europe</a></li>
+            <li><a href="#" type="button">Australia</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container" style="margin-top: 8%;">
+    <div class="col-md-6 col-md-offset-3">     
+        <div class="row">
+            <div id="logo" class="text-center">
+                <h1>Logo goes here</h1><p>Lorel Ipsum dolor</p>
+            </div>
+            <!--form starts here-->
+            <form>
+                <div class="form-group">
+                    <input class="form-control input-lg" 
+                    id="countryName" type="text" ng-model="countryName"
+                    placeholder="Search for a country">
+                    
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg" onclick="testfunction()" id="searchButton">
+                        Search
+                    </button>
+                </div>
+            </form>
+            <!--form ends here-->
+            <div class="text-center">
+                <h3>You've selected: {{ countryName }}</h3>
+            </div>
+        </div>            
+    </div>
+</div>
+
+
+<script src="app/app.js"></script>
+
+</body>
+</html>
