@@ -6,12 +6,12 @@ app.config(function($routeProvider) {
         templateUrl : "/app/views/home.html"
     })
     .when("/about", {
-        templateUrl : "/app/views/about.html"
+        templateUrl : "fahimhoque.github.io/visareq/app/views/about.html"
     })
     .when("/contact", {
-        templateUrl : "/app/views/contact.html"
+        templateUrl : "fahimhoque.github.io/visareq/app/views/contact.html"
     })
     .when("/blue", {
-        templateUrl : "/app/views/about.html"
+        templateUrl : "fahimhoque.github.io/visareq/app/views/about.html"
     });
 });
